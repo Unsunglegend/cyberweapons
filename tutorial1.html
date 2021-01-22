@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>External Stylesheets and Importing Stylesheets</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+    /* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+};
+</style>
+</head>
+<body><pre>
+    <marquee  direction="right" behavior="alternate" style="background:rgb(255, 208, 0);border:RED 3px SOLID" >  
+        <i>Welcome back Comrade!</i> 
+        </marquee>                  
+                               <h1><u>External Stylesheets</u></h1>
+<h3>This method is best used, When you need to apply a styles sheet to multiple pages, it is often recommended to 
+    create an external Stylesheet and link it to various web pages.
+    In this method one file contains style codes of .css extension and another file contains the HTML code.
+    Then the CSS file is linked to the HTML document by this method using LINK element.
+    Steps to apply external style sheet in a HTML File are:
+            1) Create a html file.
+            2) Create an externalsheet file with .css extension.
+            3) Now, open the source code of the html file you have created and in the head section, by using the 
+              link element define its various attributes:
+                 -> Href = specifies the location of external Stylesheet file's url
+                 -> Rel = The rel attribute specifies the relationship between the current document and the 
+                          linked document.
+                -> Type = It  specifies the media type of the linked document/resource. The most common value of type
+                         is "text/css". If you omit the type attribute, the browser will look at the rel attribute 
+                        to guess the correct type. So, if rel="stylesheet", the browser will assume the type is "text/css".
+    Example:  &ltHEAD&gt
+              &ltLINK Rel="Stylesheet" Type="text/css" Href="----.css"&gt
+              &lt/HEAD&gt
+</h3>
+<hr color="black">
+                                  <h1><u>Importing Stylesheets</u></h1>
+<h3>In this method also, we have to create a style code file with .css extension and a html file.
+    But here instead of linking the style code with LINK element, we use import statement to import the style code..
+    Steps to use import statement:
+    1) Input &ltSTYLE&gt tag in the Head section. 
+    2) Then write -> @Import url(----.css) 
+    3) Then close the style tag.
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Info: Always use "@" before import i.e., @import
+      </div>
+   Example: 
+             &ltHEAD&gt
+            &ltSTYLE&gt
+            @Import url(---.css)
+            &lt/STYLE&gt
+            &lt/HEAD&gt
+</h3>
+</body>
+</html>
