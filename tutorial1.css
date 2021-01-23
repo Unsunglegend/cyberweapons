@@ -1,0 +1,42 @@
+body
+{
+    background: #CE5937;
+    background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 0%, #C59237 100%);
+    background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 0%, #C59237 100%);
+    background: linear-gradient(to right, #CE5937 0%, #1C6EA4 0%, #c59237 100%);
+    }
+
+h1 
+{
+    font-family:cursive; text-align: center;  
+    text-decoration-color:blueviolet;
+    
+    color: #FFFFFF;
+background: transparent;
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+color: #FFFFFF;
+background: transparent;
+
+}
+h3
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 20px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+h4
+{
+    color: #e0eff2;
+background: transparent;
+font: italic bold Georgia, Serif;
+text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+color: #e0eff2;
+background:transparent;
+}
